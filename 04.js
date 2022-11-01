@@ -14,7 +14,16 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
-}
+  let numero = num.toString();
+ 
+  let primerNum = numero.split("");
+  let losDosPrimeros = (primerNum[0] + primerNum[1]);
+ 
+  let girarNum = primerNum.reverse();
+  let losDosUltimos = (girarNum[0] + girarNum[1]);
+   if (losDosPrimeros === losDosUltimos ){return true}
+  else {return false};
+};
 
 // No modifiques nada debajo de esta linea //
 
